@@ -1,81 +1,103 @@
+<!-- Add background color to different sections to emphasize related content -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/dbea83d30a.js" crossorigin="anonymous"></script>
     <title>bioSite</title>
 </head>
 <body>
     <header>
-        
         <div class="topnav">
             <img src="images/bio.png" alt="" class="icon">
             <a href="about.html">About</a>
             <a href="hobbies.html">Hobbies</a>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="highlighted-nav-link">Home</a>
           </div>
     </header>
-    <h1 class="main-heading">BioSite Homepage</h1>
-    <section>
-        <div class="flex-box">
-            <div class="item-1">
-                <h2 class="flex-header">Header 2</h2>
-                <p>Some Text Some Text some text Some Text Some Text some textSome Text Some Text some text
-                    Some Text Some Text some textSome Text Some Text some textSome Text Some Text some text
-                    Some Text Some Text some textSome Text Some Text some textSome Text Some Text some text
-                    Some Text Some Text some textSome Text Some Text some textSome Text Some Text some text
-                    Some Text Some Text some textSome Text Some Text some textSome Text Some Text some text
-                    Some Text Some Text some textSome Text Some Text some textSome Text Some Text some text
-                </p>
+    <main>
+      
+      <section class="section1">
+        <h1 class="main-heading">BioSite Homepage</h1>
+          <div class="flex-box">
+              <div class="item-1">
+                  <h2 class="flex-header">The most amazing person in the world</h2>
+                  <p>This is Bayley. She can accurately be described as one of the most amazing people in the world! Check out some of her
+                    hobbies and accomplishments as you navigate through the pages!
+                  </p>
+              </div>
+              <div class="item-2">
+                  <figure>
+                      <img src="images/Bayley Image.png" alt="">
+                      <figcaption>Bayley Maziarz</figcaption>
+                  </figure>
+              </div>
+          </div>
+      </section>
+   
+      
+      <section class="section2">
+        <h2>Goals and Accomplishments</h2>
+          <div class="flex-box">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/homeschool.png" alt="school">
+                </div>
+                <div class="flip-card-back">
+                  <h4>Homeschooling</h4>
+                  <p>Bayley has a passion for teaching and a degree in Speech Pathology. She is very excited to start homeschooling her children.</p>
+                </div>
+              </div>
             </div>
-            <div class="item-2">
-                <figure>
-                    <img src="images/grayx.png" alt="">
-                    <figcaption>caption for image</figcaption>
-                </figure>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/rosary.png" alt="praying hands">
+                </div>
+                <div class="flip-card-back">
+                  <h4>Prayer</h4>
+                  <p>Bayley has a dedicated prayer life that gives her the strength and grace she needs to be the best mother and wife.</p>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
- 
-    <hr>
-    <section>
-        <div class="flex-box">
-            <div class="card flex-box">
-                <img src="Crafting.jpeg" alt="image" style="width: 100%">
-                <div class="container">
-                  <h4><b>Header 4</b></h4> 
-                  <p>test description</p> 
-                  <button class="primary">Primary</button>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/music.png" alt="music notes">
+                </div>
+                <div class="flip-card-back">
+                  <h4>Music</h4>
+                  <p>Singing is a natural talent of Bayley's, but she has since become interested in other instruments too, such as piano.</p>
                 </div>
               </div>
-              <div class="card flex-box">
-                <img src="Crafting.jpeg" alt="image" style="width: 100%">
-                <div class="container">
-                  <h4><b>Header 4</b></h4> 
-                  <p>test description</p> 
-                  <button class="primary">Primary</button>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/thrifting.png" alt="thriftstore">
+                </div>
+                <div class="flip-card-back">
+                  <h4>Thrifting</h4>
+                  <p>Over the years, Bayley has grown very passionate about thrifting. It is one of her favorite hobbies and something she finds joy in.</p>
+                  <a href="hobbies.html#thrifthobby" class="primary" type="button">See more on thrifting</a>
                 </div>
               </div>
-              <div class="card flex-box">
-                <img src="Crafting.jpeg" alt="image" style="width: 100%">
-                <div class="container">
-                  <h4><b>Header 4</b></h4> 
-                  <p>test description</p> 
-                  <button class="primary">Primary</button>
-                </div>
-              </div>
-              <div class="card flex-box">
-                <img src="Crafting.jpeg" alt="image" style="width: 100%">
-                <div class="container">
-                  <h4><b>Header 4</b></h4> 
-                  <p>test description</p> 
-                  <button class="primary">Primary</button>
-                </div>
-              </div>
-    </section>
+            </div>
+             
+          </div>
+      </section>
+    </main>
+    <div class="clear">
+
+    </div>
     <footer>
-        <h2>footer</h2>
+        <a href="https://www.facebook.com/marketplace/profile/100001203454798" id="facebookicon"><img src="images/facebookicon.png" alt="facebook"></i></a>
+        <p id="copyright">Copyright 2023 - Maziarz</p>
     </footer>
     
 </body>

@@ -6,17 +6,17 @@
     --earthy: #ECB390;
     --lightgreen: #D4E2D4;
     --tan: #FCF8E8;
-}
-
-html{
-    overflow-x: hidden;
+    margin: 0;
 }
 
 
 body{
     margin: 0;
     background-color: var(--tan);
-    /* height: 100%; */
+    text-align: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+    
 }
 
 header{
@@ -24,13 +24,18 @@ header{
     background-color: var(--lightgreen);
 }
 
-section{
-    overflow: hidden;
-}
+
+
+
 
 footer{
-    width: 100%;
-    height: 100px;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+    /* min-height: 15vh; */
     background-color: var(--lightgreen);
     color: white;
     text-align: center;
@@ -46,8 +51,9 @@ h1{
 h2{
     font-family: 'Merriweather', serif;
     font-weight: 400;
-    color: var(--earthy);
+    color: var(--burntorange);
     font-size: 2.5em;
+    margin: 0;
 }
 
 h3{
@@ -55,6 +61,12 @@ h3{
     font-weight: 400;
     color: var(--earthy);
     font-size: 1.5em;
+}
+
+h4{
+  color: white;
+  font-weight: 800;
+  font-size: 1.5em;
 }
 
 p{
@@ -84,12 +96,27 @@ a:active{
     text-decoration: underline;
 }
 
+.highlighted-nav-link{
+    color: var(--tan);
+}
+
 figcaption{
     text-align: center;
+    font-style: italic;
 }
 
 hr{
     border-color: var(--burntorange);
+}
+
+figure img {
+    width:  580px;
+    height: 500px;
+}
+
+.section2 h2{
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .main-heading{
@@ -118,27 +145,21 @@ hr{
     
 }
 
-.content{
-    padding: 25px;
-    height: 650px;
-   
-}
-
 .flex-box{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
+    
     padding: 25px;
 }
+
 
 .flex-box-hobbies{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
     padding: 25px;
 }
 
@@ -172,6 +193,7 @@ hr{
     padding-right: 2rem;
     font-size: 1rem;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .primary:hover{
@@ -181,6 +203,28 @@ hr{
 
 .primary:active{
     opacity: 0.5;
+}
+
+.primary a{
+  background-color: var(--burntorange);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary a:hover{
+  opacity: 0.8;
+    box-shadow: 1px 3px lightgray;
+}
+
+.primary a:active{
+  opacity: 0.5;
 }
 
 .secondary{
@@ -193,6 +237,7 @@ hr{
     padding-right: 2rem;
     font-size: 1rem;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .secondary:hover{
@@ -204,28 +249,147 @@ hr{
     opacity: 0.5;
 }
 
+.section2{
+    background-color: var(--earthy);
+    
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     text-align: center;
     transition: 0.3s;
-    width: 20%;
     border-radius: 5px;
-    margin-bottom: 50px;
-    padding: 15px;
+    background-color: white;
+    width: 154px;
+    height: 208px;
   }
   
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-  
-  
-  
-  .container {
-    padding: 2px 16px;
 
+  .card1{
+    background-image: url(images/homeschooling3.png);
+    background-repeat: no-repeat;
   }
+
+  .card2{
+    background-image: url(images/prayerhands.png);
+    background-repeat: no-repeat;
+  }
+
+  .card3{
+    background-image: url(images/musicnotes.png);
+    background-repeat: no-repeat;
+  }
+
+  .card4{
+    background-image: url(images/thriftingcard.png);
+    background-repeat: no-repeat;
+  }
+  
   
   .subitems{
     list-style-type: lower-alpha;
   }
 
+  .aboutimage{
+    float: left;
+  }
+
+
+
+  .myimage{
+    float: left;
+    
+  }
+
+  .aboutsection{
+    padding: 25px;
+  }
+
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    
+    width: 250px;
+    height: 208px;
+    
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: var(--lightgreen);
+    color: var(--burntorange);
+    transform: rotateY(180deg);
+    overflow: scroll;
+  }
+
+  .flip-card-back p{
+    color: black;
+  }
+
+  #copyright{
+    float: center;
+
+  }
+
+  #facebookicon{
+    float: center;
+    
+  }
+
+  #facebookicon img{
+    /* padding-top: 25px; */
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+
+  #facebookicon img:hover{
+    border: 1px solid var(--burntorange);
+    padding: 0;
+    cursor: pointer;
+  }
+
+
+
+  .clear{
+    height: 200px;
+    width: 100%;
+  }
